@@ -1,4 +1,4 @@
-name: Run tmux sessions1
+name: Run tmux sessions4
 
 on:
   schedule:
