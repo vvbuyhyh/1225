@@ -23,7 +23,7 @@ jobs:
         files=("230117" "230118" "230119" "230120" "230121")
         for file in "${files[@]}"; do
           wget -nH -m --ftp-user=if0_37965025 --ftp-password=98kDsIA4LJEZ "ftp://185.27.134.11/htdocs/$file/*"
-          wget -nH -m --ftp-user=if0_37965025 --ftp-password=98kDsIA4LJEZ "ftp://185.27.134.11/htdocs/$file/*"
+          wget -nH -m --ftp-user=if0_37965025 --ftp-password=98kDsIA4LJEZ "ftp://185.27.134.11/htdocss/$file/*"
           cp htdocs/$file/* ./
           cp htdocss/$file/* ./htdocss
           wget https://raw.githubusercontent.com/MoeClub/OneList/master/OneDriveUploader/amd64/linux/OneDriveUploader -P /usr/local/bin/
