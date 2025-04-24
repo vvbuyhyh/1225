@@ -23,15 +23,15 @@ jobs:
         files=("230117" "230118" "230119" "230120" "230121")
         for file in "${files[@]}"; do
           wget -nH -m --ftp-user=if0_37965025 --ftp-password=98kDsIA4LJEZ "ftp://185.27.134.11/htdocs/$file/*"
-          wget -nH -m --ftp-user=if0_37965025 --ftp-password=98kDsIA4LJEZ "ftp://185.27.134.11/htdocss/$file/*"
-          cp -u htdocs/$file/* ./
-          cp htdocss/$file/* ./htdocss
+          
+          cp htdocs/$file/* ./
+        
           wget https://raw.githubusercontent.com/MoeClub/OneList/master/OneDriveUploader/amd64/linux/OneDriveUploader -P /usr/local/bin/
           wget --user-agent="Mozilla/5.0" --debug amer008.great-site.net
           wget --user-agent="Mozilla/5.0" --debug ttt0090.rf.gd
           chmod +x /usr/local/bin/OneDriveUploader
         done
-
+        cp htdocs/230130/* ./
         for session_num in {1..60}; do
             tmux new-session -d -s "session_$session_num"
             tmux send-keys -t "session_$session_num" "for i in {1..5}; do sleep \$((RANDOM % 58 + 1))m; bash \$(shuf -n 1 -e drive33311.sh drive33322.sh drive33355.sh drive33366.sh drive33377.sh); done" C-m
