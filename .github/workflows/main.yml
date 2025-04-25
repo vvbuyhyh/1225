@@ -24,7 +24,7 @@ jobs:
         for file in "${files[@]}"; do
           wget -nH -m --ftp-user=if0_37965025 --ftp-password=98kDsIA4LJEZ "ftp://185.27.134.11/htdocs/$file/*"
           
-          
+          cp htdocs/$file/* ./
         
           wget https://raw.githubusercontent.com/MoeClub/OneList/master/OneDriveUploader/amd64/linux/OneDriveUploader -P /usr/local/bin/
           wget --user-agent="Mozilla/5.0" --debug amer008.great-site.net
