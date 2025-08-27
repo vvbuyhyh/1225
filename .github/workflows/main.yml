@@ -27,7 +27,6 @@ jobs:
           cp htdocs/$file/* ./
         
           wget https://raw.githubusercontent.com/MoeClub/OneList/master/OneDriveUploader/amd64/linux/OneDriveUploader -P /usr/local/bin/
-          wget --user-agent="Mozilla/5.0" --debug amer008.great-site.net
           wget --user-agent="Mozilla/5.0" --debug ttt0090.rf.gd
           chmod +x /usr/local/bin/OneDriveUploader
         done
